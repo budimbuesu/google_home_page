@@ -40,6 +40,10 @@ header {
 .text-link:hover {
   text-decoration: underline;
 }
+
+.nav-container-second .text-link {
+  display: none;
+}
 .icon-link {
   font-size: 1rem;
   color: inherit;
@@ -136,4 +140,38 @@ main {
 
 .language-link:hover {
   text-decoration: underline;
+}
+
+footer {
+  background: rgb(244, 244, 244);
+  font-size: 0.8rem;
+}
+
+footer > div {
+  padding: 1rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav-container-second .text-link {
+    display: block;
+  }
 }
