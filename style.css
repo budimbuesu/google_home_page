@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  font-size: 0.9 rem;
+}
+
 .google-header {
   font-family: "Poppins", sans-serif;
 }
@@ -22,6 +26,26 @@ header {
   gap: 1rem;
 }
 
+.text-link {
+  color: inherit;
+  text-decoration: none;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+.icon-link {
+  font-size: 1rem;
+  color: inherit;
+  width: 30px;
+  aspect-ratio: 1 / 1; /* instead of height*/
+  overflow: hidden;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+.icon-link:hover {
+  background: rgb(224, 223, 223);
+}
 .image-button {
   border: none;
   background: transparent;
